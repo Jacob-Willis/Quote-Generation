@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\JacobW\\source\\repos\\Quote-Generation\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Quote-Generation.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Quote-Generation.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\JacobW\\source\\repos\\Quote-Generation\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\JacobW\\source\\repos\\Quote-Generation\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JacobW\\source\\repos\\Quote-Generation\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JacobW\\source\\repos\\Quote-Generation\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Quote-Generation.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Quote-Generation.props",
+      "PackagePath": "build\\Quote-Generation.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Quote-Generation.props",
+      "PackagePath": "buildMultiTargeting\\Quote-Generation.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Quote-Generation.props",
+      "PackagePath": "buildTransitive\\Quote-Generation.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
