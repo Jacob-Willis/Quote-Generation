@@ -1,0 +1,8 @@
+C:\Users\JacobW\source\repos\Quote-Generation\bin\Release\net8.0\publish\Quote-Generation.exe
+C:\Users\JacobW\source\repos\Quote-Generation\bin\Release\net8.0\publish\appsettings.Development.json
+C:\Users\JacobW\source\repos\Quote-Generation\bin\Release\net8.0\publish\appsettings.json
+C:\Users\JacobW\source\repos\Quote-Generation\bin\Release\net8.0\publish\Components\Resources\quotes.json
+C:\Users\JacobW\source\repos\Quote-Generation\bin\Release\net8.0\publish\Quote-Generation.dll
+C:\Users\JacobW\source\repos\Quote-Generation\bin\Release\net8.0\publish\Quote-Generation.deps.json
+C:\Users\JacobW\source\repos\Quote-Generation\bin\Release\net8.0\publish\Quote-Generation.runtimeconfig.json
+C:\Users\JacobW\source\repos\Quote-Generation\bin\Release\net8.0\publish\Quote-Generation.pdb
