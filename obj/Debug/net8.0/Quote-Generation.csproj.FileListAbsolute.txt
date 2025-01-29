@@ -27,3 +27,6 @@ C:\Users\JacobW\source\repos\Quote-Generation\obj\Debug\net8.0\refint\Quote-Gene
 C:\Users\JacobW\source\repos\Quote-Generation\obj\Debug\net8.0\Quote-Generation.pdb
 C:\Users\JacobW\source\repos\Quote-Generation\obj\Debug\net8.0\Quote-Generation.genruntimeconfig.cache
 C:\Users\JacobW\source\repos\Quote-Generation\obj\Debug\net8.0\ref\Quote-Generation.dll
+C:\Users\JacobW\source\repos\Quote-Generation\bin\Debug\net8.0\Components\Resources\quotes.json
+C:\Users\JacobW\source\repos\Quote-Generation\obj\Debug\net8.0\Quote-Generation.sourcelink.json
+C:\Users\JacobW\source\repos\Quote-Generation\bin\Debug\net8.0\package-lock.json

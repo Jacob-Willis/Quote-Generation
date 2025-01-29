@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Quote-Generation/1.0.0": {
+        "runtime": {
+          "Quote-Generation.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Quote-Generation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
