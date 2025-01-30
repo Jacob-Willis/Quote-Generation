@@ -1,39 +1,41 @@
 ﻿using Microsoft.AspNetCore.Components;
+using Quote_Generation.Components.Models;
+using System.Net.Http;
+using static System.Net.WebRequestMethods;
 
 namespace Quote_Generation.Components.Pages
 {
     public partial class Home : ComponentBase
     {
-        public string Author { get; set; } = "Creed";
-        public string Quote { get; set; } = "When Pam gets Michael's old chair, I get Pam's old chair. Then I'll have two chairs. Only one to go.";
+        [Inject]
+        HttpClient Http { get; set; }
 
-        private List<(string Author, string Quote)> QuotesList = new List<(string, string)>()
+        public List<QuoteClass> QuoteList { get; set; }
+        public string Author { get; set; }
+        public string Quote { get; set; }
+
+        public Home()
         {
-            ("Michael Scott", "I'm not superstitious, but I am a little stitious."),
-            ("Jim Halpert", "Bears. Beets. Battlestar Galactica."),
-            ("Pam Beesly", "I feel God in this Chili's tonight."),
-            ("Dwight Schrute", "Identity theft is not a joke, Jim! Millions of families suffer every year."),
-            ("Dwight Schrute", "Whenever I'm about to do something, I think, 'Would an idiot do that?' And if they would, I do not do that thing."),
-            ("Creed", "When Pam gets Michael's old chair, I get Pam's old chair. Then I'll have two chairs. Only one to go."),
-            // Add more quotes as desired
-        };
+            QuoteList = new List<QuoteClass>();
+            Author = "New instance";
+            Quote = "Click button to generate a new quote";
+        }
 
-        protected override void OnInitialized()
+        protected override async Task OnInitializedAsync()
         {
-            Random random = new Random();
-            int i = random.Next(QuotesList.Count);
-
-            Author = QuotesList[i].Author;
-            Quote = QuotesList[i].Quote;
+            QuoteList = await Http.GetFromJsonAsync<List<QuoteClass>>("Resources/quotes.json");
         }
 
         protected void GenerateQuote()
         {
-            Random random = new Random();
-            int i = random.Next(QuotesList.Count);
+            if (QuoteList != null && QuoteList.Count > 0)
+            {
+                Random random = new();
+                int i = random.Next(QuoteList.Count);
 
-            Author = QuotesList[i].Author;
-            Quote = QuotesList[i].Quote;
+                Author = QuoteList[i].Author;
+                Quote = QuoteList[i].Quote;
+            }
         }
     }
 }
