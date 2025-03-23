@@ -8,11 +8,11 @@
 
   <ItemGroup>
     <Content Include="Controllors\Query.cs" />
-    <Content Include="index.html">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
     <Content Include="Models\QuoteClass.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\index.html" />
   </ItemGroup>
 
   <ItemGroup>
