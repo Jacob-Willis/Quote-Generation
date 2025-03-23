@@ -18,11 +18,11 @@ jobs:
         with:
           node-version: '16'  # Replace with your preferred Node.js version
 
-      - name: Install dependencies
-        run: npm install  # Only if you have a `package.json` file with dependencies
+      #  - name: Install dependencies
+      #  run: npm install  # Only if you have a `package.json` file with dependencies
 
-      - name: Build project
-        run: npm run build  # Adapt if your static site uses a different build command
+      #  - name: Build project
+      #  run: npm run build  # Adapt if your static site uses a different build command
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
