@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "QuoteGeneration",
   "resources": {
-    "hash": "sha256-OeIb5YOlSDKu9/eEU8Eq7WmoqZVRHTOoYoQgL0ym44A=",
+    "hash": "sha256-4hUrFQRod1uaeGFI5Z9hPNbS3EUP0HcWcOGkUIIWByw=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-ftpNqtARtVNE8ku5eB/jXoklb41UQ+EutUHfwmbNTBY="
     },
@@ -209,10 +209,10 @@
       "mscorlib.wasm": "sha256-RAf5jgXLg+06C4tJ3CabxAZaVjCN2/+E6fxRjRN8yHk=",
       "netstandard.wasm": "sha256-KCAE8RQwTurP5pGnGF819qf9sK++2O0rXzt6tOjlfi8=",
       "System.Private.CoreLib.wasm": "sha256-LQqLbHgeEX4HONx7GwIxGgmzIXP6n2OPxqnq+/4Tyqk=",
-      "QuoteGeneration.wasm": "sha256-PRCiVdpfXpc3rOzt01IuIYN9/Aqs51a3zNlzP6Yk15A="
+      "QuoteGeneration.wasm": "sha256-Vv23er7TCncns6tX2KD/r+UINfX70T1gFkZ+5oh/res="
     },
     "pdb": {
-      "QuoteGeneration.pdb": "sha256-MWDrxgJtreGCFoALONPSY2j/cpmgsuK/OtU5OSHS+FQ="
+      "QuoteGeneration.pdb": "sha256-DrYay3krd1c6O9LPTozBcvde97L0d5XW2wju9Akkukc="
     }
   },
   "cacheBootResources": true,
