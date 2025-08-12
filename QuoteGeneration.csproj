@@ -12,12 +12,21 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\index.html" />
+    <None Include="wwwroot\index.dev.html" />
+    <None Include="wwwroot\index.gh.html" />
   </ItemGroup>
-
+  
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.13" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.13" PrivateAssets="all" />
   </ItemGroup>
+
+  <Target Name="UseDevIndex" BeforeTargets="Build" Condition="'$(Configuration)'=='Debug'">
+    <Copy SourceFiles="wwwroot\index.dev.html" DestinationFiles="wwwroot\index.html" OverwriteReadOnlyFiles="true" />
+  </Target>
+
+  <Target Name="UseGhIndex" BeforeTargets="Publish" Condition="'$(Configuration)'=='Release'">
+    <Copy SourceFiles="wwwroot\index.gh.html" DestinationFiles="wwwroot\index.html" OverwriteReadOnlyFiles="true" />
+  </Target>
 
 </Project>

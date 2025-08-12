@@ -8,10 +8,14 @@ var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-//builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:7077") });
-builder.Services.AddScoped<Query>();
+#if DEBUG
+    var apiBase = "https://localhost:7119/"; // <-- confirm your API port
+#else
+    var apiBase = "https://YOUR-PROD-API/";  // e.g., https://quoteapi.yourdomain.com/
+#endif
 
+builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(apiBase) });
+builder.Services.AddScoped<Query>();
 builder.Services.AddSingleton<SavedQuotesService>();
 
 await builder.Build().RunAsync();
