@@ -1,0 +1,20 @@
+{
+  "name": "Quotastic",
+  "short_name": "Quotes",
+  "start_url": "/Quote-Generation/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#052767",
+  "icons": [
+    {
+      "src": "images/Quotastic_Q_192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/Quotastic_Q_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
