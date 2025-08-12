@@ -55,7 +55,7 @@ main[b-e8yfwosyb5] {
     .sidebar[b-e8yfwosyb5] {
         width: 250px;
         height: 100vh;
-        position: sticky;
+        position: fixed;
         top: 0;
     }
 
