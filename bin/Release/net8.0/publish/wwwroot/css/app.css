@@ -109,7 +109,7 @@ tbody.quote-body {
 
 .button {
     font-family: monospace;
-    position: absolute;
+    position: fixed;
     top: 25rem;
     background-image: linear-gradient(90deg, rgb(5, 39, 103) 0%, #3a0647 70%);
     color: white;
@@ -143,7 +143,7 @@ tbody.quote-body {
 
 .button {
     font-family: monospace;
-    position: absolute;
+    position: fixed;
     top: 25rem;
 }
 
@@ -224,4 +224,11 @@ p {
     margin-top: 10px;
     font-size: 1.75rem;
     margin-left: 5px;
+}
+
+img.banner {
+    display: block;
+    height: 100px;
+    margin: 0 auto;
+    max-width: 100%;
 }
